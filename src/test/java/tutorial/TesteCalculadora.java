@@ -25,12 +25,12 @@ public class TesteCalculadora {
 	
 	@Test
 	public void testMultiplicar() {
-		assertEquals(calc.dividir(2, 2), 4);
+		assertEquals(calc.multiplicar(2, 2), 4);
 	}
 	
 	@Test
 	public void testSubtrair() {
-		assertEquals(calc.dividir(2, 2), 0);
+		assertEquals(calc.subtrair(2, 2), 0);
 	}
 
 }
