@@ -53,6 +53,16 @@
     		<version>2.3</version>
   		</plugin>
   	</plugins>
+  	
+  		<resources>
+
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>log4j.properties</include>
+                </includes>
+            </resource>
+        </resources>
   </build>
   <reporting>
   	<plugins>
