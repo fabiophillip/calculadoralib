@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fileset-config file-format-version="1.2.0" simple-config="false" sync-formatter="false">
+  <local-check-config name="maven-checkstyle-plugin" location="jar:file:/C:/Users/FábioPhillip/.m2/repository/org/apache/maven/plugins/maven-checkstyle-plugin/2.12.1/maven-checkstyle-plugin-2.12.1.jar!/config/sun_checks.xml" type="remote" description="maven-checkstyle-plugin configuration">
+    <property name="checkstyle.cache.file" value="${project_loc}/target/checkstyle-cachefile"/>
+    <property name="checkstyle.header.file" value="C:\Users\FábioPhillip\Documents\GitHub\calculadoralib\target\checkstyle-header.txt"/>
+  </local-check-config>
+  <fileset name="java-sources" enabled="true" check-config-name="maven-checkstyle-plugin" local="true">
+    <file-match-pattern match-pattern="src/main/java/.*\/.*\.java" include-pattern="true"/>
+  </fileset>
+</fileset-config>

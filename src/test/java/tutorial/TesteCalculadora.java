@@ -22,7 +22,7 @@ public class TesteCalculadora {
 	@Test
 	public void testSoma() {
 		int resultadoSoma2Mais2 = calc.somar(2, 2);
-
+		int resultadoSoma = calc.somar(2, 2);
 		logger.info("resultado testSoma() 2 + 2:" + resultadoSoma2Mais2);
 		assertEquals(resultadoSoma2Mais2, 4);
 		
