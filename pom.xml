@@ -16,14 +16,12 @@
   				<version>3.1</version>
   				<executions>
   				<execution>
-  					<phase>
-  						verify
-  					</phase>
   					<goals>
-  						<goal>
-  							check
-  						</goal>
+  						<goal>pmd</goal>
   					</goals>
+  					<configuration>
+  						<verbose>true</verbose>
+  					</configuration>
   				</execution>
   				</executions>
   			</plugin>
@@ -36,14 +34,12 @@
   			<version>3.1</version>
   			<executions>
   				<execution>
-  					<phase>
-  						verify
-  					</phase>
   					<goals>
-  						<goal>
-  							check
-  						</goal>
+  						<goal>pmd</goal>
   					</goals>
+  					<configuration>
+  						<verbose>true</verbose>
+  					</configuration>
   				</execution>
   			</executions>
   		</plugin>
