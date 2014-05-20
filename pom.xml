@@ -8,15 +8,20 @@
   <description>tutorial simples de uso de calculadora </description>
   <packaging>jar</packaging>
   <build>
-  	<pluginManagement>
   	<plugins>
-  		<plugin>
-        	<groupId>org.codehaus.mojo</groupId>
-        	<artifactId>sonar-maven-plugin</artifactId>
-        	<version>2.1</version>
-      		</plugin>
-  	</plugins>
-  	</pluginManagement>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>javancss-maven-plugin</artifactId>
+        <version>2.1-SNAPSHOT</version>
+        
+        <configuration>
+          <failOnViolation>false</failOnViolation>
+          <ccnLimit>12</ccnLimit>
+          <ncssLimit>90</ncssLimit>
+        </configuration>
+        
+      </plugin>
+    </plugins>
   		<resources>
 
             <resource>
