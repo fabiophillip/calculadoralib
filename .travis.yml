@@ -4,5 +4,3 @@ jdk:
 
 script:
  - mvn install -DskipTests=false
- - mvn clean install
- - mvn sonar:sonar
