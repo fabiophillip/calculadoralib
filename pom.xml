@@ -2,10 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>P.A.Project</groupId>
-  <artifactId>TutorialBambooComMaven</artifactId>
+  <artifactId>CalculadoraLib</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>TutorialBambooComMaven</name>
-  <description>tutorial simples de uso da ferramenta Bamboo </description>
+  <name>CalculadoraLib</name>
+  <description>tutorial simples de uso de calculadora </description>
   <packaging>jar</packaging>
   <build>
   	<pluginManagement>
