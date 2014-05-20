@@ -8,20 +8,48 @@
   <description>tutorial simples de uso de calculadora </description>
   <packaging>jar</packaging>
   <build>
+  	<pluginManagement>
+  		<plugins>
+  			<plugin>
+  				<groupId>org.apache.maven.plugins</groupId>
+  				<artifactId>maven-pmd-plugin</artifactId>
+  				<version>3.1</version>
+  				<executions>
+  				<execution>
+  					<goals>
+  						<goal>pmd</goal>
+  					</goals>
+  					<configuration>
+  						<verbose>true</verbose>
+  					</configuration>
+  				</execution>
+  				</executions>
+  			</plugin>
+  		</plugins>
+  	</pluginManagement>
   	<plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>javancss-maven-plugin</artifactId>
-        <version>2.1-SNAPSHOT</version>
-        
-        <configuration>
-          <failOnViolation>false</failOnViolation>
-          <ccnLimit>12</ccnLimit>
-          <ncssLimit>90</ncssLimit>
-        </configuration>
-        
-      </plugin>
-    </plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-pmd-plugin</artifactId>
+  			<version>3.1</version>
+  			<executions>
+  				<execution>
+  					<goals>
+  						<goal>pmd</goal>
+  					</goals>
+  					<configuration>
+  						<verbose>true</verbose>
+  					</configuration>
+  				</execution>
+  			</executions>
+  		</plugin>
+  		 <plugin>
+    		<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-jxr-plugin</artifactId>
+    		<version>2.3</version>
+  		</plugin>
+  	</plugins>
+  	
   		<resources>
 
             <resource>
@@ -33,14 +61,20 @@
         </resources>
   </build>
   <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>javancss-maven-plugin</artifactId>
-        <version>2.1-SNAPSHOT</version>
-      </plugin>
-    </plugins>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-pmd-plugin</artifactId>
+  			<version>3.1</version>
+  		</plugin>
+  		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jxr-plugin</artifactId>
+            <version>2.3</version>
+        </plugin>
+  	</plugins>
   </reporting>
+  
   
   <dependencies>
   <dependency>
@@ -48,7 +82,7 @@
 	<artifactId>junit</artifactId>
 	<version>4.11</version>
 	</dependency>
-	
+
 	 <dependency>
     	<groupId>org.apache.logging.log4j</groupId>
     	<artifactId>log4j-api</artifactId>
@@ -65,14 +99,14 @@
     <artifactId>log4j</artifactId>
     <version>1.2.17</version>
 	</dependency>
-	
+
 	<dependency>
-	<groupId>org.codehaus.mojo</groupId>
-	<artifactId>javancss-maven-plugin</artifactId>
-	<version>2.0</version>
-</dependency>
+	<groupId>pmd</groupId>
+	<artifactId>pmd</artifactId>
+	<version>4.3</version>
+	</dependency>
             
-	
+
   </dependencies>
   <properties>
   		<maven.compiler.source>1.6</maven.compiler.source>
