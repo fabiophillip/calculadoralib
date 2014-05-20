@@ -4,4 +4,4 @@ jdk:
 
 script:
  - mvn install -DskipTests=false
- - mvn javancss:report
+ - mvn pmd:pmd
