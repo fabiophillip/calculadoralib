@@ -7,6 +7,34 @@
   <name>TutorialBambooComMaven</name>
   <description>tutorial simples de uso da ferramenta Bamboo </description>
   <packaging>jar</packaging>
+  <build>
+  	<pluginManagement>
+  		<plugins>
+  			<plugin>
+  				<groupId>org.apache.maven.plugins</groupId>
+  				<artifactId>maven-pmd-plugin</artifactId>
+  				<version>3.1</version>
+  			</plugin>
+  		</plugins>
+  	</pluginManagement>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-pmd-plugin</artifactId>
+  			<version>3.1</version>
+  		</plugin>
+  	</plugins>
+  </build>
+  <reporting>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-pmd-plugin</artifactId>
+  			<version>3.1</version>
+  		</plugin>
+  	</plugins>
+  </reporting>
+  
   
   <dependencies>
   <dependency>
