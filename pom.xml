@@ -14,6 +14,18 @@
   				<groupId>org.apache.maven.plugins</groupId>
   				<artifactId>maven-pmd-plugin</artifactId>
   				<version>3.1</version>
+  				<executions>
+  				<execution>
+  					<phase>
+  						verify
+  					</phase>
+  					<goals>
+  						<goal>
+  							check
+  						</goal>
+  					</goals>
+  				</execution>
+  				</executions>
   			</plugin>
   		</plugins>
   	</pluginManagement>
@@ -22,6 +34,18 @@
   			<groupId>org.apache.maven.plugins</groupId>
   			<artifactId>maven-pmd-plugin</artifactId>
   			<version>3.1</version>
+  			<executions>
+  				<execution>
+  					<phase>
+  						verify
+  					</phase>
+  					<goals>
+  						<goal>
+  							check
+  						</goal>
+  					</goals>
+  				</execution>
+  			</executions>
   		</plugin>
   	</plugins>
   </build>
