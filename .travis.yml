@@ -4,5 +4,4 @@ jdk:
 
 script:
  - mvn install -DskipTests=false
- - pmd:check
 
