@@ -4,4 +4,4 @@ jdk:
 
 script:
  - mvn install -DskipTests=false
- - mvn pmd:pmd
+ - mvn clean package assembly:assembly
