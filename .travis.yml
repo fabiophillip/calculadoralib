@@ -1,7 +1,16 @@
 language: java
 jdk:
  - openjdk7
-
+    
 script:
  - mvn install -DskipTests=false
  - mvn clean package assembly:assembly
+
+deploy:
+  provider: releases
+  api-key: "ba4a785b64974f2faadc0915cb572f45ef8973ee"
+  file: "CalculadoraLib-0.0.1-SNAPSHOT-assembly.zip"
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
