@@ -8,7 +8,7 @@ script:
  - git config --global user.email "haru_glory6@hotmail.com"
  - git config --global user.name "fabiophillip"
  - git config --global user.password "viewtiful4490"
- - git add "/home/travis/build/fabiophillip/calculadoralib/src/main/resources/CalculadoraLib-0.0.1-SNAPSHOT-assembly.zip"
+ - git add "src/main/resources/CalculadoraLib-0.0.1-SNAPSHOT-assembly.zip"
  - git commit -a -m "commit do travis para github"
  - git remote add github https://fabiophillip:viewtiful4490@github.com:fabiophillip/calculadoralib.git
  - git push https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git master
