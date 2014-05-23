@@ -5,6 +5,7 @@ jdk:
 script:
  - mvn install -DskipTests=false
  - mvn clean package assembly:assembly
- - gem install octokit
- - gem install dpl
- - dpl --provider=releases --api-key=ba4a785b64974f2faadc0915cb572f45ef8973ee --user=fabiophillip --password=viewtiful4490 --repo=calculadoraweb --file=CalculadoraLib-0.0.1-SNAPSHOT-assembly.zip
+ - mvn install git
+ - git add "CalculadoraLib-0.0.1-SNAPSHOT-assembly.zip"
+ - git commit -m
+ - git push
