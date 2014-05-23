@@ -5,12 +5,5 @@ jdk:
 script:
  - mvn install -DskipTests=false
  - mvn clean package assembly:assembly
-
-deploy:
-  provider: releases
-  api-key: "ba4a785b64974f2faadc0915cb572f45ef8973ee"
-  file: "/home/travis/build/fabiophillip/calculadoralib/src/main/resources/CalculadoraLib-0.0.1-SNAPSHOT-assembly.zip"
-  skip_cleanup: true
-  on:
-    tags: true
-    all_branches: true
+ - gem install dpl
+ - dpl --provider=releases --api-key=ba4a785b64974f2faadc0915cb572f45ef8973ee --repo=calculadoraweb --file=CalculadoraLib-0.0.1-SNAPSHOT-assembly.zip
