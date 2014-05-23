@@ -13,3 +13,4 @@ script:
  - git remote add github git@github.com:fabiophillip/calculadoralib.git
  - git fetch
  - git push https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git master
+ - git branch
