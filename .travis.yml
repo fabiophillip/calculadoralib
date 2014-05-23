@@ -9,5 +9,4 @@ script:
  - git config --global user.name "fabiophillip"
  - git config --global user.password "viewtiful4490"
  - git commit -a -m "commit do travis para github"
- - git remote add github https://fabiophillip:viewtiful4490@github.com:fabiophillip/calculadoralib.git
  - git push https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git master
