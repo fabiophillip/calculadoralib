@@ -11,5 +11,5 @@ script:
  - git add "/home/travis/build/fabiophillip/calculadoralib/src/main/resources/CalculadoraLib-0.0.1-SNAPSHOT-assembly.zip"
  - git commit -a -m "commit do travis para github"
  - git remote add github git@github.com:fabiophillip/calculadoralib.git
- - git fetch https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git
- - git push https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git head
+ - git fetch
+ - git push https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git master
