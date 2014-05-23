@@ -12,4 +12,4 @@ script:
  - git commit -a -m "commit do travis para github"
  - git remote add github git@github.com:fabiophillip/calculadoralib.git
  - git fetch https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git
- - git push https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git master
+ - git push https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git head
