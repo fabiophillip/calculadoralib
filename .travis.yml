@@ -8,5 +8,5 @@ script:
  - git config --global user.email "haru_glory6@hotmail.com"
  - git config --global user.name "fabiophillip"
  - git config --global user.password "viewtiful4490"
- - git commit -a -m "commit do travis para github"
+ - git commit -a -m -v "commit do travis para github"
  - git push https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git master
