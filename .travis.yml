@@ -5,7 +5,9 @@ jdk:
 script:
  - mvn install -DskipTests=false
  - mvn clean package assembly:assembly
- - mvn install git
- - git add "CalculadoraLib-0.0.1-SNAPSHOT-assembly.zip"
- - git commit
- - git push
+ - git config --global user.email "haru_glory6@hotmail.com"
+ - git config --global user.name "fabiophillip"
+ - git config --global user.password "viewtiful4490"
+ - git commit -a -m "commit do travis para github"
+ - git log origin/master.. --stat
+ - git push https://fabiophillip:viewtiful4490@github.com/fabiophillip/calculadoralib.git master
