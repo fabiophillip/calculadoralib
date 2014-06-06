@@ -7,4 +7,5 @@ tem soma, subtração, divisão e multiplicação
 
 operações básicas da calculadora
 
-+ - / *
+
+++++
