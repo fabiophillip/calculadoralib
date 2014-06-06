@@ -37,8 +37,8 @@ public class TesteCalculadora {
 	
 	@Test
 	public void testMultiplicar() {
-		int resultadoMultiplicacao = calc.multiplicar(2, 2);
-		logger.info("resultado testMultiplicar() 2 * 2:" + resultadoMultiplicacao);
+		int resultadoMultiplicacao = calc.somar(1, 1);
+		logger.info("resultado testMultiplicar() 1 * 1:" + resultadoMultiplicacao);
 		assertEquals(resultadoMultiplicacao, 4);
 	}
 	
